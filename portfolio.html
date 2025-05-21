@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">å
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+    </style>
+    <title>Fdaa Alhalaki</title>
+</head>
+
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand satisfy-regular" href="#">FA</a>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home" id="ToHome">Home</a>
+                    <a class="nav-link" href="#about" id="ToAbout">About</a>
+                    <a class="nav-link" href="#projects" id="ToProject">Projects</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 2. Home SECTION -->
+    <section class="home" id="homeSection">
+        <div class="hero-section d-flex align-items-center justify-content-center">
+            <div class="text-center container">
+                <div class="row align-items-center">
+                    <!-- left Side: Name and Position -->
+                    <div class="col-md-6 text-start introduction-txt">
+                        <small class="greeting">HI THERE 👋 I AM </small>
+                        <h1 class="name mb-2 pt-3">Fdaa Alhalaki</h1>
+                        <h3 class="position mb-3">Software Engineering</h2>
+                            <p class="bio">I enjoy crafting responsive websites and exploring new technologies.
+                                Whether it’s clean code or creative design, I’m always excited to learn and grow.
+                            </p>
+
+                            <button id="toAbout" class="btn about-btn">About Me</button>
+                    </div>
+                    <!-- Right Side: Profile Image -->
+                    <div class="col-md-6 text-center pt-5">
+                        <img class="profile-img img-fluid" src="FdaaP.png" alt="Fdaa Alhalaki">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT ME -->
+    <section id="about" class="about about-section container">
+
+        <!-- Centered Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title">About me</h2>
+        </div>
+
+        <!-- Two-column Layout -->
+        <div class="row align-items-center">
+
+            <!-- Left Column: Text About Me -->
+            <div class="col-md-6">
+                <p class="about-text">
+                    Fully committed to continuous learning and growth, I’m a third-year Software Engineering student
+                    with over two years of experience in full-stack and mobile development. I’m passionate about
+                    crafting responsive, user-friendly applications and take pride in blending clean design with strong
+                    technical foundations. With a love for UI/UX design, Agile teamwork, and test-driven development
+                    using JUnit, I’m always eager to solve real-world problems through technology. When I’m not coding,
+                    I enjoy exploring new ideas, collaborating on creative projects, and expanding my technical toolkit.
+                </p>
+            </div>
+
+            <!-- Right Column: Tech Icons -->
+
+            <div class="col-md-6 text-center tech-icons">
+                <div class="tech-icons-container">
+
+                    <!-- Row 1: 2 icons -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="HTML.png" alt="HTML" class="tech-icon img-fluid icon1">
+                            <small class="icon-Label">HTML</small>
+                        </div>
+
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="bootstrap.png" alt="Bootstrap" class="tech-icon img-fluid icon1">
+                            <small class="icon-Label">Bootstrap</small>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="css2.png" alt="CSS" class="tech-icon img-fluid icon1">
+                            <small class="icon-Label">CSS3</small>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: 4 icons -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="java.png" alt="Java" class="tech-icon img-fluid icon2">
+                            <small class="icon-Label">Java</small>
+                        </div>
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="javaS.png" alt="JavaScript" class="tech-icon img-fluid icon2">
+                            <small class="icon-Label">JavaScript</small>
+                        </div>
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="python.png" alt="Python" class="tech-icon img-fluid icon2">
+                            <small class="icon-Label">Python</small>
+                        </div>
+                        <div class="col-3 col-md-2 text-center">
+                            <img src="nodeJS.png" alt="NodeJS" class="tech-icon img-fluid icon2">
+                            <small class="icon-Label">NodeJS</small>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: 3 icons -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="github.png" alt="GitHub" class="tech-icon img-fluid icon3">
+                            <small class="icon-Label">GitHub</small>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="firebase.png" alt="Firebase" class="tech-icon img-fluid icon3">
+                            <small class="icon-Label">Firebase</small>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="mongodb-removebg-preview.png" alt="MongoDB" class="tech-icon img-fluid icon3">
+                            <small class="icon-Label">MongoDB</small>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="React.png" alt="ReactJS" class="tech-icon img-fluid icon4">
+                            <small class="icon-Label">ReactJS</small>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <img src="sql.png" alt="MySQL" class="tech-icon img-fluid icon4">
+                            <small class="icon-Label">MySQL</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- 4. PROJECTS SECTION -->
+
+    <section class="projects container" id="projectsSection">
+        <!-- <div class="projects-section container py-5"> -->
+             <div class="text-center mb-5">
+            <h2 class="section-title">About me</h2>
+        </div>
+            <div class="row align-items-center">
+                <!-- Repeat this col block for each project -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="glass-card text-light">
+                        <img src="Screenshot 2025-05-20 at 11.30.05 PM.png" alt="HTML Project" class="card-img">
+                        <div class="glass-card-content">
+                            <h5 class="card-title">HTML Portfolio</h5>
+                            <p class="card-text">Responsive portfolio built with clean HTML/CSS and soft UI components.
+                            </p>
+                            <a href="#" class="glass-btn mt-auto">LIVE APP</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- card2 -->
+
+     <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="glass-card text-light">
+                        <img src="Screenshot 2025-05-20 at 11.30.05 PM.png" alt="HTML Project" class="card-img">
+                        <div class="glass-card-content">
+                            <h5 class="card-title">HTML Portfolio</h5>
+                            <p class="card-text">Responsive portfolio built with clean HTML/CSS and soft UI components.
+                            </p>
+                            <a href="#" class="glass-btn mt-auto">LIVE APP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+
+     <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="glass-card text-light">
+                        <img src="Screenshot 2025-05-20 at 11.30.05 PM.png" alt="HTML Project" class="card-img">
+                        <div class="glass-card-content">
+                            <h5 class="card-title">HTML Portfolio</h5>
+                            <p class="card-text">Responsive portfolio built with clean HTML/CSS and soft UI components.
+                            </p>
+                            <a href="#" class="glass-btn mt-auto">LIVE APP</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card 4 -->
+     <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="glass-card text-light">
+                        <img src="Screenshot 2025-05-20 at 11.30.05 PM.png" alt="HTML Project" class="card-img">
+                        <div class="glass-card-content">
+                            <h5 class="card-title">HTML Portfolio</h5>
+                            <p class="card-text">Responsive portfolio built with clean HTML/CSS and soft UI components.
+                            </p>
+                            <a href="#" class="glass-btn mt-auto">LIVE APP</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- </div> -->
+
+    </section>
+    <!-- 5. EXPERIENCE SECTION (Optional) -->
+    <div class="experience-section container py-5">
+        <div class="section-title text-center">
+            <!-- Heading -->
+        </div>
+        <div class="timeline">
+            <!-- Each experience item -->
+            <div class="experience-item">
+                <!-- Role, Company, Date, Description -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. CONTACT SECTION -->
+    <div class="contact-section container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Contact Form -->
+            </div>
+            <div class="col-md-6">
+                <!-- Contact Info / Social Links -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. FOOTER -->
+    <div class="footer-section text-center py-4">
+        <!-- Copyright -->
+        <!-- Footer Links or Icons -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toAbout').addEventListener('click', function () {
+            const aboutSection = document.getElementById('about');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('ToHome').addEventListener('click', function () {
+            const aboutSection = document.getElementById('homeSection');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".home").classList.add("intro-loaded");
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const icons = document.querySelectorAll('.tech-icon');
+                    icons.forEach(icon => icon.classList.add('visible'));
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('.tech-icons'));
+
+    </script>
+</body>
+
+</html>
