@@ -32,21 +32,27 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 .profile-img {
   width: 400px;
   height: 400px;
-  object-fit: cover;
-  border-radius: 50%; 
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
   border: 5px solid var(--accent-color);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
   animation: float 4s ease-in-out infinite;
   transition: transform 0.3s ease;
-  
 }
- section{
-  height: 100vh;
- }
+
+section {
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
 .home{
   padding-top: 80px;
   display: flex;
@@ -96,6 +102,14 @@ body {
   letter-spacing: 1px; /* the space between letters */
 }
 
+
+.name {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.position {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
 .name {
   font-size: 3.6rem;
   font-weight: 600;
@@ -302,4 +316,19 @@ btn-check:focus+.btn, .btn:focus {
 
 .projects{
   padding-top: 8rem !important;
+}
+
+
+@media (max-width: 768px) {
+  .bio {
+    font-size: 0.95rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .glass-card {
+    padding: 0.75rem;
+  }
 }
