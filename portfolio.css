@@ -46,11 +46,14 @@ body {
   animation: float 4s ease-in-out infinite;
   transition: transform 0.3s ease;
 }
-
+section{
+   scroll-margin-top: 80px;
+}
 section {
   min-height: 100vh;
   padding-top: 6rem;
   padding-bottom: 3rem;
+ 
 }
 
 .home{
