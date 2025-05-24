@@ -6,7 +6,7 @@ html {
 body {
   background-color: #2f2f2f;
   color: #6c7a89;
-   font-family: "Josefin Slab", serif;
+    font-family: "Overlock SC", sans-serif;
 }
 
 /* ========== NAVBAR ========== */
@@ -113,7 +113,7 @@ section {
 
 .about-btn:hover {
   background-color:#dbc8af;
-  color: #6c7a89;
+  color: #2f2f2f;
 }
 
 .btn-check:focus + .btn,
@@ -128,11 +128,24 @@ section {
 }
 
 .section-title {
+  position: relative;
+  display: inline-block;
   font-size: 2.2rem;
   font-weight: 400;
   color: #dbc8af;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  width: 100%;
+  background-color: #8e9b81;
+  border-radius: 2px;
 }
 
 .about-text {
@@ -186,14 +199,14 @@ section {
 }
 
 /* ========== CARDS ========== */
-.projects {
+/* .projects {
   padding-top: 8rem !important;
-}
+} */
 
 .case-card {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 230px;
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -218,8 +231,7 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 
 .case-title {
   font-size: 1.6rem;
-  font-weight: 300;
-  font-family: 'Playfair Display', serif;
+  font-weight: 200;
   margin-bottom: 0.2rem;
 }
 
@@ -227,6 +239,42 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   opacity: 0.85;
 }
+
+.image-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-6px);
+}
+
+.image-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.image-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
 
 
 
@@ -265,44 +313,4 @@ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   .glass-card {
     padding: 0.75rem;
   }
-}
-
-
-
-
-
-
-.image-card {
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.image-card:hover {
-  transform: translateY(-6px);
-}
-
-.image-card-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.image-card-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: left;
-  letter-spacing: 1px;
 }
